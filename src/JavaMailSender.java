@@ -46,9 +46,9 @@ public class JavaMailSender {
 			message.setFrom(new InternetAddress(myAccountEmail));
 			//observers for email list
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
-			message.setSubject("Trying out my new Email List Java code (I'm a Nigerian Prince)");
+			message.setSubject("Trying out my new Email List Java code.");
 			message.setText("Hey there,\n\nThis is my first try to make an Email List using Observer/Observable design pattern. "
-					+ "As I mentionned earlier, I'm a Nigerian prince so you ain't getting cash."
+					+ "As I mentionned earlier, I'm cool! :)."
 					+ "\n\nThank you for going to my TED Talk. \nSincerely, \n\nPierre-Nicolas Perrin");
 			return message;
 		} catch (Exception e) {
